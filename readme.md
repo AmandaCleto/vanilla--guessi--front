@@ -5,4 +5,4 @@ The user also has 3 lives, and it will be losing them every time it clicks at a 
 
 The intuition of this project was to train my Javascript skills.
 
-See the result: 
+See the result: https://amandacleto.github.io/Guessi/.

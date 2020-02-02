@@ -1,0 +1,235 @@
+@import 'variables.scss';
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $backgroundColorSecondary;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    .primaryColor {
+        background-color: $backgroundColor;
+        height: 80px;
+        width: 100%;
+        h1 {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            line-height: 80px;
+            margin-left: 2em;
+            float: left;
+        }
+    }
+    .copy {
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        line-height: 95px;
+        margin-right: 1.5em;
+        float: right;
+        word-wrap: wrap;
+    }
+    .secondaryColor {
+        background-color: $line;
+        height: 6px;
+        widows: 100%;
+    }
+    .thirdColor {
+        background-color: $lineSecondary;
+        height: 12px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        .primaryColor {
+            h1 {
+                float: none;
+                line-height: 80px;
+                font-size: 40px;
+                margin-left: 0;
+            }
+        }
+        .copy {
+            display: none;
+        }
+        .secondaryColor {
+            margin-top: 0;
+        }
+    }
+}
+
+main {
+    #menu_message {
+        align-items: center;
+        flex-direction: column;
+        background-color: $mainBox;
+        padding: 2em;
+        margin: 1em;
+        #menu_first,
+        #menu_secondary {
+            font-size: 2em;
+            color: black;
+            text-align: start;
+            margin-top: 1em;
+            text-align: center;
+        }
+        #menu_hint {
+            font-size: 1.5em;
+            color: black;
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        #menu_btn {
+            margin-top: 2em;
+            width: 120px;
+            height: 40px;
+            font-size: 1.5em;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #menu_reflesh {
+            display: none;
+        }
+    }
+    .hearts {
+        justify-content: center;
+        .heart {
+            font-size: 5em;
+            margin-top: 0.5em;
+            color: rgba($heart, 0.5);
+            border-color: black;
+            //don't select
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+    #number {
+        margin-top: 1.5em;
+        align-items: center;
+        #numberMessage {
+            font-size: 1.5em;
+        }
+        #numberOfRocks {
+            width: 50px;
+            height: 40px;
+            margin-left: 20px;
+            background-color: rgba(255, 255, 255, 0.534);
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 40px;
+        }
+    }
+    #boxes {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 3em;
+        margin-left: 20em;
+        margin-right: 20em;
+        margin-bottom: 3em;
+        //don't select
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        .bx {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background-color: rgba($cards, 0.5);
+            margin: 0.5em;
+            align-items: center;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        footer {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 560px) {
+    footer {
+        .footer_copy {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        .hearts {
+            .heart {
+                font-size: 3em;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+        #boxes {
+            .bx {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 1.5em;
+            }
+        }
+    }
+    footer {
+        display: block;
+        background-color: $backgroundColor;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        .footer_copy {
+            display: block;
+            font-size: 1em;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 451px) {
+    main {
+        .hearts {
+            .heart {
+                margin-left: 0.3em;
+                margin-right: 0.3em;
+            }
+        }
+        #boxes {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3em;
+            margin-left: 1em;
+            margin-right: 3em;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        #boxes {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3em;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+}

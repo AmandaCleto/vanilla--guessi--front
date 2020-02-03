@@ -73,8 +73,17 @@ main #menu_message {
     text-align: center;
     align-items: center;
     justify-content: center; }
+  main #menu_message #menu_btn_reflesh {
+    display: none;
+    margin-top: 2em;
+    width: 120px;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
   main #menu_message #menu_reflesh {
-    display: none; }
+    text-decoration: none; }
 main .hearts {
   justify-content: center; }
   main .hearts .heart {
@@ -92,7 +101,8 @@ main #number {
   margin-top: 1.5em;
   align-items: center; }
   main #number #numberMessage {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-left: 10px; }
   main #number #numberOfRocks {
     width: 50px;
     height: 40px;
@@ -100,7 +110,8 @@ main #number {
     background-color: rgba(255, 255, 255, 0.534);
     text-align: center;
     font-size: 1.5em;
-    line-height: 40px; }
+    line-height: 40px;
+    margin-right: 10px; }
 main #boxes {
   justify-content: center;
   flex-wrap: wrap;

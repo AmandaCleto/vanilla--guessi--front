@@ -53,7 +53,8 @@ for (var i = 1; i <= fullBox.length; i++) {
 
 //init the game
 function startGame() {
-    var btn = document.querySelector('.btn');
+    var btn = document.querySelector('#menu_btn');
+    btn.disabled = "true";
     document.getElementById("bx1").onclick = "chosenOption()";
     for (var i = 1; i <= fullBox.length; i++) {
         document.getElementById("bx" + i).style.cursor = "pointer";
@@ -184,7 +185,7 @@ function winner() {
         document.getElementById("menu_btn").style.display = "none";
 
         //showing the reset button
-        document.getElementById("menu_reflesh").style.display = "block";
+        document.getElementById("menu_btn_reflesh").style.display = "block";
         return;
     }
     if (winNumber == rightSpots && heart1 == 0 && heart2 == 0 && heart3 == 1) {
@@ -208,7 +209,7 @@ function winner() {
         document.getElementById("menu_btn").style.display = "none";
 
         //showing the reset button
-        document.getElementById("menu_reflesh").style.display = "block";
+        document.getElementById("menu_btn_reflesh").style.display = "block";
         return;
     }
     if (winNumber == rightSpots && heart1 == 1 && heart2 == 1 && heart3 == 1) {
@@ -232,7 +233,7 @@ function winner() {
         document.getElementById("menu_btn").style.display = "none";
 
         //showing the reset button
-        document.getElementById("menu_reflesh").style.display = "block";
+        document.getElementById("menu_btn_reflesh").style.display = "block";
 
         //Creating the risk for the mouth
         var divRisc = document.createElement('img');
@@ -273,5 +274,5 @@ function gameOver() {
     document.getElementById("menu_btn").style.display = "none";
 
     //showing the reset button
-    document.getElementById("menu_reflesh").style.display = "block";
+    document.getElementById("menu_btn_reflesh").style.display = "block";
 }

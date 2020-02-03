@@ -96,8 +96,18 @@ main {
             align-items: center;
             justify-content: center;
         }
-        #menu_reflesh {
+        #menu_btn_reflesh {
             display: none;
+            margin-top: 2em;
+            width: 120px;
+            height: 60px;
+            font-size: 1.5em;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #menu_reflesh {
+            text-decoration: none;
         }
     }
     .hearts {
@@ -121,6 +131,7 @@ main {
         align-items: center;
         #numberMessage {
             font-size: 1.5em;
+            margin-left: 10px;
         }
         #numberOfRocks {
             width: 50px;
@@ -130,6 +141,7 @@ main {
             text-align: center;
             font-size: 1.5em;
             line-height: 40px;
+            margin-right: 10px;
         }
     }
     #boxes {

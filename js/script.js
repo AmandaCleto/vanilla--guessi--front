@@ -42,7 +42,7 @@ for (var i = 1; i <= fullBox.length; i++) {
 //finding the "wrong" box
 for (var i = 1; i <= fullBox.length; i++) {
     if (boxes[i] == 1) {
-        console.log(i);
+        //console.log(i);
         numberOfRocks++; //counting how many rocks there are
     }
 }

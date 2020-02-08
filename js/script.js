@@ -16,7 +16,7 @@ let rock2 = parseInt(((Math.random() * 100) / 3.33)) + 1;
 let rock3 = parseInt(((Math.random() * 100) / 3.33)) + 1;
 let rock4 = parseInt(((Math.random() * 100) / 3.33)) + 1;
 let rock5 = parseInt(((Math.random() * 100) / 3.33)) + 1;
-let rock6 = parseInt(((Math.random() * 100) / 3.33)) + 1;
+//let rock6 = parseInt(((Math.random() * 100) / 3.33)) + 1;
 
 //console.log(rock1, rock2, rock3, rock4, rock5, rock6)
 
@@ -37,9 +37,9 @@ for (var i = 1; i <= fullBox.length; i++) {
     if (i == rock5) {
         boxes[i] = 1;
     }
-    if (i == rock6) {
+    /*if (i == rock6) {
         boxes[i] = 1;
-    }
+    }*/
 }
 
 
@@ -76,7 +76,7 @@ function chosenOption() {
     option.addEventListener('click', function(e) {
         for (var i = 1; i <= fullBox.length; i++) {
             //if is not the rock, hide
-            if (e.target.id == "bx" + i && i != rock1 && i != rock2 && i !== rock3 && i != rock4 && i !== rock5 && i != rock6) {
+            if (e.target.id == "bx" + i && i != rock1 && i != rock2 && i !== rock3 && i != rock4 && i !== rock5 /*&& i != rock6*/ ) {
                 document.getElementById("bx" + i).style.visibility = "hidden";
                 rightSpots++; //counting the number of right spots
                 winner() //calling the function to see if the user had won
@@ -119,13 +119,14 @@ function chosenOption() {
                 winner() //calling the function to see if the user had won
                 break;
             }
+            /*
             if (e.target.id == "bx" + i && i == rock6) {
                 document.getElementById("bx" + i).style.backgroundColor = "brown";
                 document.getElementById("bx" + i).style.borderRadius = "100%";
                 amountHeart()
                 winner() //calling the function to see if the user had won
                 break;
-            }
+            }*/
         }
     })
 };
@@ -223,7 +224,7 @@ function winner() {
         document.getElementById("menu_first").innerHTML = "Caraca, você é um ninja!!!";
         document.getElementById("menu_first").style.color = "white";
 
-        document.getElementById("menu_secondary").innerHTML = "Muitos parabéns a você!!";
+        document.getElementById("menu_secondary").innerHTML = "Mil milhões de parabéns a você!!!";
         document.getElementById("menu_secondary").style.color = "white";
 
         document.getElementById("menu_hint").innerHTML = "Desafie seus amigos para ver quem é melhor! E claro, jogue de novo :D";
